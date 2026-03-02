@@ -1,74 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaskFlow App</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow App</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+/* HERO */
+.hero{
+    background:#4CAF50;
+    color:white;
+    padding:80px 20px;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    background:white;
+    color:#4CAF50;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 20px;
+}
+
+/* FEATURES */
+.features{
+    background:#f4f4f4;
+}
+
+.feature-box{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    width:90%;
+    border-radius:10px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* PRICING */
+.pricing{
+    background:#fafafa;
+}
+
+.price-card{
+    background:white;
+    margin:20px auto;
+    padding:25px;
+    width:90%;
+    border-radius:10px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    color:white;
+    padding:25px;
+}
+
+/* DESKTOP VIEW */
+@media(min-width:768px){
+
+    .features,
+    .pricing{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .feature-box,
+    .price-card{
+        width:250px;
+    }
+}
+
+</style>
+
 </head>
+
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+<section class="hero">
     <h1>TaskFlow</h1>
     <p>Organize your tasks easily and boost productivity.</p>
     <button>Get Started</button>
-  </section>
+</section>
 
-  <!-- FEATURES SECTION -->
-  <section class="features">
+<section class="features">
     <h2>Features</h2>
+
     <div class="feature-box">
-      <div>📋</div>
-      <h3>Task Management</h3>
-      <p>Create and manage tasks easily.</p>
+        <h3>📋 Task Management</h3>
+        <p>Create and manage tasks easily.</p>
     </div>
 
     <div class="feature-box">
-      <div>⏰</div>
-      <h3>Reminders</h3>
-      <p>Never miss an important deadline.</p>
+        <h3>⏰ Reminders</h3>
+        <p>Never miss important deadlines.</p>
     </div>
 
     <div class="feature-box">
-      <div>📊</div>
-      <h3>Progress Tracking</h3>
-      <p>Track your daily productivity.</p>
+        <h3>📊 Progress Tracking</h3>
+        <p>Monitor your productivity.</p>
     </div>
-  </section>
+</section>
 
-  <!-- REVIEWS SECTION -->
-  <section class="reviews">
-    <h2>What Users Say</h2>
-    <p>"This app changed how I work!" – Amina</p>
-    <p>"Very simple and powerful." – John</p>
-  </section>
-
-  <!-- PRICING SECTION -->
-  <section class="pricing">
+<section class="pricing">
     <h2>Pricing</h2>
+
     <div class="price-card">
-      <h3>Free</h3>
-      <p>$0/month</p>
+        <h3>Free</h3>
+        <p>$0/month</p>
     </div>
 
     <div class="price-card">
-      <h3>Pro</h3>
-      <p>$9/month</p>
+        <h3>Pro</h3>
+        <p>$9/month</p>
     </div>
 
     <div class="price-card">
-      <h3>Team</h3>
-      <p>$19/month</p>
+        <h3>Team</h3>
+        <p>$19/month</p>
     </div>
-  </section>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
+<footer>
     <p>Contact: info@taskflow.com</p>
     <p>Follow us: Facebook | Twitter | Instagram</p>
-  </footer>
+</footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
