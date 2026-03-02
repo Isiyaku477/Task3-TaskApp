@@ -45,3 +45,14 @@ footer {
   color: white;
   padding: 20px;
 }
+@media (min-width: 768px) {
+  .features, .pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .feature-box, .price-card {
+    width: 250px;
+  }
+}
