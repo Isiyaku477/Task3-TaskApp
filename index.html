@@ -8,28 +8,91 @@
 <style>
 
 body{
-    margin:0;7
+    margin:0;
     font-family: Arial, sans-serif;
     text-align:center;
+    scroll-behavior:smooth;
 }
 
-/* HERO */
+/* HERO PREMIUM STYLE */
 .hero{
-    background:#4CAF50;
+    background:linear-gradient(135deg,#4CAF50,#1B5E20);
     color:white;
-    padding:80px 20px;
+    padding:100px 20px;
 }
 
 .hero button{
-    padding:12px 25px;
+    padding:14px 30px;
     border:none;
-    border-radius:6px;
+    border-radius:30px;
     background:white;
-    color:#4CAF50;
+    color:#1B5E20;
     font-weight:bold;
     cursor:pointer;
+    transition:0.3s;
 }
 
+.hero button:hover{
+    transform:scale(1.08);
+}
+
+/* SECTIONS */
+section{
+    padding:70px 20px;
+    animation:fadeIn 1s ease-in-out;
+}
+
+/* FEATURES & PRICING CARDS */
+.feature-box,
+.price-card{
+    background:white;
+    margin:25px auto;
+    padding:25px;
+    width:90%;
+    border-radius:15px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+/* Hover Effect */
+.feature-box:hover,
+.price-card:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    padding:30px;
+}
+
+/* DESKTOP VIEW */
+@media(min-width:768px){
+    .features,
+    .pricing{
+        display:flex;
+        justify-content:center;
+        gap:25px;
+    }
+
+    .feature-box,
+    .price-card{
+        width:260px;
+    }
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 /* SECTIONS */
 section{
     padding:60px 20px;
